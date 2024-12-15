@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+
+body {
+    background-image: url('https://solana.com/_next/image?url=https%3A%2F%2Fcdn.builder.io%2Fapi%2Fv1%2Fimage%2Fassets%252Fce0c7323a97a4d91bd0baa7490ec9139%252F4e7450bbc1114943b89ef51ea59fb791&w=1200&q=75');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: #070707;
+    color: white; /* Ensures text is readable */
+}
+
+
+image{
+    display: flex;
+}
+
+.exp{
+    margin: 0;
+    padding: 0;
+    background-color: #cecccc;
+    height: 1.3px;
+    width: 90%;
+    margin: auto;
+    margin-top: -0.5%;
+    border: none;
+}
+
+.logo{
+    width: 130px;
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+.Link a{
+    position: relative;
+    text-decoration: none;
+    padding-bottom: 0.75rem;
+    color: white;
+}
+.Link a::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #1d4ed8;
+    transition: all 0.3s ease;
+}
+.Link a:hover::after{
+    width: 70%;
+}
+.btn{
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    color: white;
+    border-radius: 5px;
+    background-color: #1d4ed8;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.btne:hover{
+    background-color: #024242 !important;
+}
+
+
+.blue{
+    position: absolute;
+    box-shadow: 0 0 1000px 50px #1d4ed8;
+    z-index: -100;
+}
+
+header .content h4{
+    margin-bottom: 1rem;
+    color: #ccc;
+    font-size: 1ren;
+    font-weight: 600;
+}
+header .content h1{
+    color: #fff;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 4rem; 
+}
+header .content h1 span{
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #fff;
+}
+header .content p{
+    margin-bottom: 2rem;
+    color: #ccc;
+}
+header .image{
+    position: relative;
+}
+header .image::before{
+    content: "o";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 38rem;
+    font-weight: 400;
+    line-height: 20rem;
+    color: #1dd881ac;
+    opacity: 0.2;
+    z-index: -100;
+}
+header .image img{
+    max-width: 600px;
+    margin: auto;
+    animation: animate 1.5s linear infinite alternate-reverse;
+}
+@keyframes animate{
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(-10px);
+    }
+}
+
+section .header{
+    margin-bottom: 1rem;
+    color: #fff;
+    text-align: center;
+    font-size: 2.25rem;
+    font-weight: 600;
+}
+.features{
+    margin-top: 4rem;
+    
+}
+.features .card{
+    background-color: #112527bd;
+    padding: 1rem;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+.features .card:hover{
+    background-color: #424141cb;
+    border-radius: #fff; 
+}
+.features .card h4{
+    margin-bottom: 0.5rem;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.features .card p{
+    color: #ccc;
+    margin-bottom: 1rem;
+}
+.features .card a{
+    color: #fff;
+    transition: all 0.3s ease;
+}
+.features .card a:hover{
+    color: #1e40af;
+}
+.featuress{
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.featuress .card{
+    background-color: #112527aa;
+    margin: auto;
+    padding: 1rem;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    width: 60%;
+    transition: all 0.3s ease;
+}
+.featuress .card:hover{
+    background-color: #424141d9;
+    border-radius: #fff; 
+}
+.featuress .card h4{
+    margin-bottom: 0.5rem;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.pricing{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+}
+.pricing .card{
+    padding: 3rem 2rem;
+    background-color: #112527aa;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+.pricing .card:hover{
+    background-color: #424141d9;
+    border-color: #fff;
+    cursor: pointer;
+}
+.pricing .card .content{
+    flex: 1;
+    margin-bottom: 2rem;
+}
+.pricing .card h4{
+    margin-bottom: 1rem;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.pricing .card p{
+    color: #fff;
+    margin-bottom: 0.75rem;
+}
+
+
+@media (max-width:450px ) {
+    .logo{
+        width: 100px;
+        }
+        .nav-links{
+            gap: 1rem !important;
+            margin-top: 1rem;
+        }
+        .featuress .card{
+            width: 100%;
+        }
+        .mk{
+            margin-top: 1rem;
+        }
+        .pricing{
+            grid-template-columns: 1fr;
+        }
+
+}
+
